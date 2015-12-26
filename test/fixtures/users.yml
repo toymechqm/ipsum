@@ -4,8 +4,26 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-#  column: value
+user1:
+  email: admin@admin.com
+  name: admin
+  encrypted_password: <%= Devise.bcrypt(User, 'password') %>
+  # also tried encrypted_password: User.new(password_salt: '$2a$10$PoBe1MvkoGJsjMVTEjKqge').send(:password_digest, 'somepassword')
+
+user2:
+  email: toyjtoy@gmail.com
+  name: Josh
+  encrypted_password: <%= Devise.bcrypt(User, 'password') %>
+  # also tried encrypted_password: User.new(password_salt: '$2a$10$PoBe1MvkoGJsjMVTEjKqge').send(:password_digest, 'somepassword')
+
+user3:
+  email: jtoy@gmail.com
+  name: Billy
+  encrypted_password: <%= Devise.bcrypt(User, 'password') %>
+  # also tried encrypted_password: User.new(password_salt: '$2a$10$PoBe1MvkoGJsjMVTEjKqge').send(:password_digest, 'somepassword')
+
+user4:
+  email: password@password.com
+  name: BOB
+  encrypted_password: <%= Devise.bcrypt(User, 'password') %>
+  # also tried encrypted_password: User.new(password_salt: '$2a$10$PoBe1MvkoGJsjMVTEjKqge').send(:password_digest, 'somepassword')

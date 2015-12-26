@@ -1,0 +1,62 @@
+<h1 class="page-header">All Lorem Ipsum Themes</h1>
+<div class="row">
+    <div class="col-sm-8">
+        <% @themes.each do |theme| %>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <strong><%= theme.title %></strong>
+                </div>
+                <div class="panel-footer">
+                    <%= truncate(theme.info, :length => 100)  %>
+                    <br>
+                    <br>
+                    <div class="btn-group" role="group" aria-label="...">
+                        <%= link_to 'View This Ipsum', theme, class: "btn btn-success" %>
+                        <%= link_to 'Copy To Clipboard', '#', class: "btn btn-default" %>
+                        <%= link_to 'Clone & Modify', '#', class: "btn btn-default" %>
+                        <% if current_user && (theme.user == current_user) %>
+                            <%= link_to 'Edit', edit_theme_path(theme), class: "btn btn-default"  %>
+                            <%= link_to 'Destroy', theme, class: "btn btn-danger" , method: :delete, data: { confirm: 'Are you sure?' } %>
+                        <% end %>
+                    </div>
+                    <br>
+                    <br>
+
+
+
+                </div>
+            </div>
+        <% end %>
+    </div>
+
+    <div class="col-sm-4">
+        <div class="item-content-block">
+            <%= link_to 'New Ipsum', new_theme_path, class: "btn btn-info btn-block" %>
+        </div>
+        <div class="item">
+            <div class="item-content-block">
+                <div class="block-title">Newest Ipsums</div>
+            </div>
+            <ol>
+                <% @newest.each do |item| %>
+                    <li><%= item.title %></li>
+                <% end %>
+
+            </ol>
+            <div class="item-content-block">
+                <div class="block-title">Tags</div>
+            </div>
+            <div class="item-content-block tags">
+                <a href="#">lorem</a>
+                <a href="#">loremipse</a>
+                <a href="#">Esrite</a>
+                <a href="#">remip</a>
+                <a href="#">serte</a>
+                <a href="#">quiaxms</a>
+                <a href="#">loremipse</a>
+                <a href="#">Esrite</a>
+            </div>
+        </div>
+    </div>
+</div>
+

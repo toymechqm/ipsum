@@ -1,0 +1,137 @@
+<p id="notice"><%= notice %></p>
+    <h1 class="text-center"><%= @theme.title %></h1>
+</div> <!-- end application-layout container for banner -->
+    <div class="theme-banner">
+    </div>
+<div class="container"> <!-- Start Container again -->
+<p>
+  <em>
+    <% @theme.info.split.each do |keyword| %>
+        <% @buttons = ['success','primary','danger', 'default','danger','warning','info'] %>
+        <span class="label label-<%= @buttons.shuffle.first %>"><%= keyword %></span>
+    <% end %>
+  </em>
+</p>
+
+<div class="letter-slider">
+    <h3>
+        Number of paragraphs
+    </h3>
+    <input id="letterA" type="radio" name="letter">
+    <label for="letterA">1</label>
+    <input id="letterB" type="radio" name="letter">
+    <label for="letterB">2</label>
+    <input id="letterC" type="radio" name="letter">
+    <label for="letterC">3</label>
+    <input id="letterD" type="radio" name="letter">
+    <label for="letterD">4</label>
+    <input id="letterE" type="radio" name="letter">
+    <label for="letterE">5</label>
+    <input id="letterF" type="radio" name="letter">
+    <label for="letterF">6</label>
+</div>
+
+    <strong><%= @theme.title %> Output:</strong>
+    <%= render 'examples' %>
+    <div id="hiddenp" class="pone"><%= ipsum_shuffle %></div>
+    <div id="hiddenp" class="ptwo"><%= ipsum_shuffle %></div>
+    <div id="hiddenp" class="pthree"><%= ipsum_shuffle %></div>
+    <div id="hiddenp" class="pfour"><%= ipsum_shuffle %></div>
+    <div id="hiddenp" class="pfive"><%= ipsum_shuffle %></div>
+    <div id="hiddenp" class="psix"><%= ipsum_shuffle %></div>
+
+  <div class='wrapper'>
+    <div class='text' style="min-height: 300px;">
+        <h3 class="text-center">
+            Select the Number of paragraphs above to
+            <br />display this themed lorem ipsum
+        </h3>
+    </div>
+  </div>
+
+<div class="show-nav">
+    <%= link_to 'Edit', edit_theme_path(@theme), class: 'btn btn-default' %>
+    <%= link_to 'Back', themes_path, class: 'btn btn-default' %>
+    <div class='btn btn-success copy'>Copy to clipboard</div>
+    <input type="button" value="Refresh" onClick="history.go(0)" class="btn btn-danger">
+</div>
+
+<script>
+    $(document).ready(function(){
+        $("#letterA").click(function(){
+            $(".text").empty();
+            $('.text').append("<p class='paragraph1'></p>").append($('.pone').text());
+        });
+        $("#letterB").click(function(){
+            $(".text").empty();
+            $('.text').append("<p class='paragraph1'></p>").append($('.pone').text());
+            $('.text').append("<p class='paragraph2'></p>").append($('.ptwo').text());
+        });
+        $("#letterC").click(function(){
+            $(".text").empty();
+            $('.text').append("<p class='paragraph1'></p>").append($('.pone').text());
+            $('.text').append("<p class='paragraph2'></p>").append($('.ptwo').text());
+            $('.text').append("<p class='paragraph3'></p>").append($('.pthree').text());
+        });
+        $("#letterD").click(function(){
+            $(".text").empty();
+            $('.text').append("<p class='paragraph1'></p>");
+            $('.text').append("<p class='paragraph2'></p>");
+            $('.text').append("<p class='paragraph3'></p>");
+            $('.text').append("<p class='paragraph4'></p>");
+            $('.paragraph1').append($('.pone').text());
+            $('.paragraph2').append($('.ptwo').text());
+            $('.paragraph3').append($('.pthree').text());
+            $('.paragraph4').append($('.pfour').text());
+        });
+        $("#letterE").click(function(){
+            $(".text").empty();
+            $('.text').append("<p class='paragraph1'></p>");
+            $('.text').append("<p class='paragraph2'></p>");
+            $('.text').append("<p class='paragraph3'></p>");
+            $('.text').append("<p class='paragraph4'></p>");
+            $('.text').append("<p class='paragraph5'></p>");
+            $('.paragraph1').append($('.pone').text());
+            $('.paragraph2').append($('.ptwo').text());
+            $('.paragraph3').append($('.pthree').text());
+            $('.paragraph4').append($('.pfour').text());
+            $('.paragraph5').append($('.pfive').text());
+        });
+        $("#letterF").click(function(){
+            $(".text").empty();
+            $('.text').append("<p class='paragraph1'></p>");
+            $('.text').append("<p class='paragraph2'></p>");
+            $('.text').append("<p class='paragraph3'></p>");
+            $('.text').append("<p class='paragraph4'></p>");
+            $('.text').append("<p class='paragraph5'></p>");
+            $('.text').append("<p class='paragraph6'></p>");
+            $('.paragraph1').append($('.pone').text());
+            $('.paragraph2').append($('.ptwo').text());
+            $('.paragraph3').append($('.pthree').text());
+            $('.paragraph4').append($('.pfour').text());
+            $('.paragraph5').append($('.pfive').text());
+            $('.paragraph6').append($('.psix').text());
+        });
+
+        (function () {
+            window.onload = function () {
+                var copy_btn;
+                copy_btn = document.querySelector('.copy');
+                return copy_btn.addEventListener('click', function (event) {
+                    var err, msg, successful, text;
+                    text = document.querySelector('.text');
+                    text.select();
+                    try {
+                        successful = document.execCommand('copy');
+                        msg = successful ? 'successful' : 'unsuccessful';
+                        return console.log('Copy command was ' + msg);
+                    } catch (_error) {
+                        err = _error;
+                        return console.log('Oops, unable to copy');
+                    }
+                });
+            };
+        }.call(this));
+    });
+</script>
+
