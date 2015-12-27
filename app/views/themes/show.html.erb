@@ -6,7 +6,7 @@
 <div class="container"> <!-- Start Container again -->
 <p>
   <em>
-    <% @theme.info.split.each do |keyword| %>
+    <% @theme.keywords.split.each do |keyword| %>
         <% @buttons = ['success','primary','danger', 'default','danger','warning','info'] %>
         <span class="label label-<%= @buttons.shuffle.first %>"><%= keyword %></span>
     <% end %>
@@ -50,7 +50,9 @@
   </div>
 
 <div class="show-nav">
-    <%= link_to 'Edit', edit_theme_path(@theme), class: 'btn btn-default' %>
+    <% if @theme.user == current_user %>
+        <%= link_to 'Edit', edit_theme_path(@theme), class: 'btn btn-default' %>
+    <% end %>
     <%= link_to 'Back', themes_path, class: 'btn btn-default' %>
     <div class='btn btn-success copy'>Copy to clipboard</div>
     <input type="button" value="Refresh" onClick="history.go(0)" class="btn btn-danger">
