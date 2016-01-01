@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
 
 // Ipsum Tags
 .item{color:#48453d; overflow:hidden;}
@@ -93,7 +94,129 @@
 }
 
 .theme-banner{
-  background: #e74c3c;
-  min-height: 333px;
-  margin-bottom: 50px;
+  overflow: hidden;
+  height: 333px;
+  margin-bottom: 25px;
 }
+
+.theme-image{
+  width: 100%;
+}
+
+.paragraph1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.ipsumtext {
+  min-height: 366px;
+}
+
+// CUSTOM TAGS FOR KEYWORDS
+.label-purple {
+  background: #9b59b6;
+}
+
+.label-carrot {
+  background: #e67e22;
+}
+
+.label-sea {
+  background: #16a085;
+}
+
+.themename {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-shadow: 2px 6px 6px rgba(0,0,0,0.2),
+                0px -5px 35px rgba(255,255,255,0.3);
+}
+.themeuser {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+
+.gravatar.img-circle{
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+}
+
+
+
+.box {
+  width:150px;
+  height:150px;
+  background:#bcc;
+  position: absolute;
+  text-align: center;
+  padding: 12px 0;
+  left: 50px;
+  -webkit-transition: all 0.5s ease;
+}
+.box:after {
+  content:'';
+  position: absolute;
+  bottom:0;
+  left:0;
+  border-top:75px solid #bcc;
+  border-right:75px solid #fff;
+}
+.box:before {
+  content:'';
+  position: absolute;
+  bottom:0;
+  right:0;
+  border-top:75px solid #bcc;
+  border-left:75px solid #fff;
+}
+.box:hover {
+  height: 350px;
+}
+.box span {
+  font-weight: bold;
+  text-shadow:1px 1px 1px #fff;
+}
+
+.btn-outline {
+  border-width: 6px;
+  border-style: solid;
+  border-color: #CEB58C;
+  margin: 0;
+}
+
+.btn-outline:hover {
+   border-color: #FACC0A;
+}
+
+.navbar-inverse {
+  background-color: #FACC0A;
+  border: none;
+}
+
+// Index panels
+.panel-footer {
+    padding: 10px 15px;
+    background-color: #CEB58C;
+    height: 135px;
+    border-top: 1px solid #A38654;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    position: relative;
+}
+
+.panel-body {
+    background: #FACC0A;
+}
+
+.navbar.navbar-inverse{
+  margin-top: 10px;
+}
+
+.links {
+    position: absolute;
+    bottom: 5px;
+}
+

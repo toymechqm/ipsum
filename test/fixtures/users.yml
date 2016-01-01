@@ -27,3 +27,9 @@ user4:
   name: BOB
   encrypted_password: <%= Devise.bcrypt(User, 'password') %>
   # also tried encrypted_password: User.new(password_salt: '$2a$10$PoBe1MvkoGJsjMVTEjKqge').send(:password_digest, 'somepassword')
+
+user5:
+  email: toyjtoy@toyjtoy.com
+  name: Josh
+  encrypted_password: <%= Devise.bcrypt(User, 'password') %>
+  # also tried encrypted_password: User.new(password_salt: '$2a$10$PoBe1MvkoGJsjMVTEjKqge').send(:password_digest, 'somepassword')

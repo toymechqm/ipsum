@@ -1,17 +1,35 @@
-<p id="notice"><%= notice %></p>
-    <h1 class="text-center"><%= @theme.title %></h1>
+<div class="row">
+    <div class="container">
+        <div class="col-sm-9">
+            <h1 class="themename"><%= @theme.title %></h1>
+
+        </div>
+        <div class="col-sm-3 text-center">
+            <%= gravatar_for @user%>
+            <h3 class="themeuser"><%= @theme.user.name %></h3>
+        </div>
+    </div>
+</div>
+
+
 </div> <!-- end application-layout container for banner -->
     <div class="theme-banner">
+        <%= image_tag @theme.image.url(:banner), class: "theme-image"%>
     </div>
 <div class="container"> <!-- Start Container again -->
-<p>
-  <em>
-    <% @theme.keywords.split.each do |keyword| %>
-        <% @buttons = ['success','primary','danger', 'default','danger','warning','info'] %>
-        <span class="label label-<%= @buttons.shuffle.first %>"><%= keyword %></span>
-    <% end %>
-  </em>
-</p>
+    <div class="row">
+        <div class="col-sm-9 word-border">
+            <em>
+                <% @theme.keywords.split.each do |keyword| %>
+                    <% @buttons = ['purple', 'carrot', 'sea', 'success', 'primary', 'danger', 'default', 'danger', 'warning', 'info'] %>
+                    <span class="label label-<%= @buttons.shuffle.first %>"><%= keyword %></span>
+                <% end %>
+            </em>
+        </div>
+        <div class="col-sm-3">
+            <%= @theme.info %></h3>
+        </div>
+    </div>
 
 <div class="letter-slider">
     <h3>
@@ -40,59 +58,68 @@
     <div id="hiddenp" class="pfive"><%= ipsum_shuffle %></div>
     <div id="hiddenp" class="psix"><%= ipsum_shuffle %></div>
 
-  <div class='wrapper'>
-    <div class='text' style="min-height: 300px;">
+<div class='wrapper'>
+    <div class='ipsumtext'>
         <h3 class="text-center">
             Select the Number of paragraphs above to
+            <%= image_tag "/assets/plathap.jpg", width: "300px" %>
             <br />display this themed lorem ipsum
         </h3>
     </div>
-  </div>
+</div>
 
 <div class="show-nav">
     <% if @theme.user == current_user %>
-        <%= link_to 'Edit', edit_theme_path(@theme), class: 'btn btn-default' %>
+        <%= link_to edit_theme_path(@theme), class: 'btn btn-default pull-right' do %>
+            Ipsum Settings <i class="fa fa-cogs"></i>
+        <% end %>
     <% end %>
-    <%= link_to 'Back', themes_path, class: 'btn btn-default' %>
-    <div class='btn btn-success copy'>Copy to clipboard</div>
-    <input type="button" value="Refresh" onClick="history.go(0)" class="btn btn-danger">
+    <button type="button" onClick="history.go(0)" class="btn btn-warning pull-right">
+        <i class="fa fa-refresh"></i>
+    </button>
+    <%= link_to themes_path, class: 'btn btn-default' do %>
+        <i class="fa fa-chevron-circle-left"></i> <br/>Back
+    <% end %>
+    <%= link_to themes_path, class: 'btn btn-success' do %>
+        <i class="fa fa-clipboard"></i> <br/>Copy
+    <% end %>
 </div>
 
 <script>
     $(document).ready(function(){
         $("#letterA").click(function(){
-            $(".text").empty();
-            $('.text').append("<p class='paragraph1'></p>").append($('.pone').text());
+            $('.ipsumtext').empty();
+            $('.ipsumtext').append("<p class='paragraph1'></p>").append($('.pone').text());
         });
         $("#letterB").click(function(){
-            $(".text").empty();
-            $('.text').append("<p class='paragraph1'></p>").append($('.pone').text());
-            $('.text').append("<p class='paragraph2'></p>").append($('.ptwo').text());
+            $('.ipsumtext').empty();
+            $('.ipsumtext').append("<p class='paragraph1'></p>").append($('.pone').text());
+            $('.ipsumtext').append("<p class='paragraph2'></p>").append($('.ptwo').text());
         });
         $("#letterC").click(function(){
-            $(".text").empty();
-            $('.text').append("<p class='paragraph1'></p>").append($('.pone').text());
-            $('.text').append("<p class='paragraph2'></p>").append($('.ptwo').text());
-            $('.text').append("<p class='paragraph3'></p>").append($('.pthree').text());
+            $('.ipsumtext').empty();
+            $('.ipsumtext').append("<p class='paragraph1'></p>").append($('.pone').text());
+            $('.ipsumtext').append("<p class='paragraph2'></p>").append($('.ptwo').text());
+            $('.ipsumtext').append("<p class='paragraph3'></p>").append($('.pthree').text());
         });
         $("#letterD").click(function(){
-            $(".text").empty();
-            $('.text').append("<p class='paragraph1'></p>");
-            $('.text').append("<p class='paragraph2'></p>");
-            $('.text').append("<p class='paragraph3'></p>");
-            $('.text').append("<p class='paragraph4'></p>");
+            $('.ipsumtext').empty();
+            $('.ipsumtext').append("<p class='paragraph1'></p>");
+            $('.ipsumtext').append("<p class='paragraph2'></p>");
+            $('.ipsumtext').append("<p class='paragraph3'></p>");
+            $('.ipsumtext').append("<p class='paragraph4'></p>");
             $('.paragraph1').append($('.pone').text());
             $('.paragraph2').append($('.ptwo').text());
             $('.paragraph3').append($('.pthree').text());
             $('.paragraph4').append($('.pfour').text());
         });
         $("#letterE").click(function(){
-            $(".text").empty();
-            $('.text').append("<p class='paragraph1'></p>");
-            $('.text').append("<p class='paragraph2'></p>");
-            $('.text').append("<p class='paragraph3'></p>");
-            $('.text').append("<p class='paragraph4'></p>");
-            $('.text').append("<p class='paragraph5'></p>");
+            $('.ipsumtext').empty();
+            $('.ipsumtext').append("<p class='paragraph1'></p>");
+            $('.ipsumtext').append("<p class='paragraph2'></p>");
+            $('.ipsumtext').append("<p class='paragraph3'></p>");
+            $('.ipsumtext').append("<p class='paragraph4'></p>");
+            $('.ipsumtext').append("<p class='paragraph5'></p>");
             $('.paragraph1').append($('.pone').text());
             $('.paragraph2').append($('.ptwo').text());
             $('.paragraph3').append($('.pthree').text());
@@ -100,13 +127,13 @@
             $('.paragraph5').append($('.pfive').text());
         });
         $("#letterF").click(function(){
-            $(".text").empty();
-            $('.text').append("<p class='paragraph1'></p>");
-            $('.text').append("<p class='paragraph2'></p>");
-            $('.text').append("<p class='paragraph3'></p>");
-            $('.text').append("<p class='paragraph4'></p>");
-            $('.text').append("<p class='paragraph5'></p>");
-            $('.text').append("<p class='paragraph6'></p>");
+            $('.ipsumtext').empty();
+            $('.ipsumtext').append("<p class='paragraph1'></p>");
+            $('.ipsumtext').append("<p class='paragraph2'></p>");
+            $('.ipsumtext').append("<p class='paragraph3'></p>");
+            $('.ipsumtext').append("<p class='paragraph4'></p>");
+            $('.ipsumtext').append("<p class='paragraph5'></p>");
+            $('.ipsumtext').append("<p class='paragraph6'></p>");
             $('.paragraph1').append($('.pone').text());
             $('.paragraph2').append($('.ptwo').text());
             $('.paragraph3').append($('.pthree').text());
@@ -114,26 +141,6 @@
             $('.paragraph5').append($('.pfive').text());
             $('.paragraph6').append($('.psix').text());
         });
-
-        (function () {
-            window.onload = function () {
-                var copy_btn;
-                copy_btn = document.querySelector('.copy');
-                return copy_btn.addEventListener('click', function (event) {
-                    var err, msg, successful, text;
-                    text = document.querySelector('.text');
-                    text.select();
-                    try {
-                        successful = document.execCommand('copy');
-                        msg = successful ? 'successful' : 'unsuccessful';
-                        return console.log('Copy command was ' + msg);
-                    } catch (_error) {
-                        err = _error;
-                        return console.log('Oops, unable to copy');
-                    }
-                });
-            };
-        }.call(this));
     });
 </script>
 
