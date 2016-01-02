@@ -8,7 +8,7 @@ class ThemesController < ApplicationController
   # GET /themes.json
   def index
     @themes = Theme.all
-    @newest = Theme.order(:title => :DESC).limit(5).reverse
+    @newest = Theme.order(:created_at => :DESC).limit(5)
   end
 
   # GET /themes/1
@@ -79,6 +79,6 @@ class ThemesController < ApplicationController
     end
     # Never trust parameters from the scary internet, only allow the white list through.
     def theme_params
-      params.require(:theme).permit(:title, :info, :percentage, :keywords)
+      params.require(:theme).permit(:title, :info, :percentage, :keywords, :image)
     end
 end

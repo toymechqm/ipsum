@@ -14,9 +14,9 @@
                     <br><br>
                         <div class="links">
                         <%= link_to 'View Ipsum', theme%>
-                        | <%= link_to 'Copy', '#'%> |
+<!--                         | <%= link_to 'Copy', '#'%> |
                         <%= link_to 'Clone', '#'%>
-                        <% if current_user && (theme.user == current_user) %>
+ -->                        <% if current_user && (theme.user == current_user) %>
                             | <%= link_to 'Edit', edit_theme_path(theme) %> |
                             <%= link_to 'Destroy', theme, method: :delete, data: { confirm: 'Are you sure?' } %>
                         <% end %>

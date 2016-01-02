@@ -191,12 +191,31 @@
    border-color: #FACC0A;
 }
 
+// NAVBAR
 .navbar-inverse {
-  background-color: #FACC0A;
-  border: none;
+  background-color: #625F56;
+  border-width: 1px;
+  border-style: solid;
+  margin-top: 10px;
+}
+
+.navbar-nav > li > a {
+  font-weight: 400;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #fff;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1.5em;
 }
 
 // Index panels
+.panel-default {
+    border-color: #A38654;
+}
+
 .panel-footer {
     padding: 10px 15px;
     background-color: #CEB58C;
@@ -209,10 +228,8 @@
 
 .panel-body {
     background: #FACC0A;
-}
-
-.navbar.navbar-inverse{
-  margin-top: 10px;
+    height: 50px;
+    padding-top: 6px;
 }
 
 .links {

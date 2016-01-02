@@ -9,9 +9,9 @@ module ThemesHelper
 
   def word_counter(string, max)
   @newwords = Theme.order(:created_at => :DESC).limit(3)
-  (@newwords.third.keywords + @newwords.first.keywords + @newwords.second.keywords).split(/\s+/)
+  (@newwords.last.keywords + @newwords.first.keywords + @newwords.second.keywords).split(/\s+/)
         .group_by{|x|x}
-        .map{|x,y|x}
+        .map{|x,y|[x,y.length]}
         .sort_by{|_,size| size} # Have to sort =/
         .last(max).join(' ')
   end
