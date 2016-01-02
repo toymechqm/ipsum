@@ -16,6 +16,9 @@ Devise.setup do |config|
   #COMMENTED THIS OUT TO MAKE HEROKU WORK!!!
   #https://github.com/RailsApps/rails_apps_composer/issues/320
 
+  # ADD FOR HEROKU
+  config.secret_key = '603e0af1d0c3a7b8bd1d3088f86e29de8e5792d16f87c3a75cb363f6effb8a9bec281f52f84897b76a78201f87702766c8258be0d1d5a8ea38e5a72c4ab5b01b'
+
   # config.mailer_sender = 'no-reply@' + Rails.application.secrets.domain_name
 
   # Configure the class responsible to send e-mails.
