@@ -40,9 +40,7 @@ main {
   @extend .container;
   background-color: #fff;
   padding-bottom: 15px;
-  padding-top: 15px;
   width: 100%;
-  margin-top: 51px; // accommodate the navbar
   }
 section {
   @extend .row;

@@ -5,7 +5,7 @@
         <div class="col-sm-6">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <strong><%= theme.title %></strong>
+                    <strong><%= link_to theme.title, theme %></strong>
                 </div>
                 <div class="panel-footer">
                     <em>By: <%= theme.user.name %></em>
@@ -13,14 +13,14 @@
                     <%= truncate(theme.info, :length => 100)  %>
                     <br><br>
                         <div class="links">
-                        <%= link_to 'View Ipsum', theme%>
-<!--                         | <%= link_to 'Copy', '#'%> |
-                        <%= link_to 'Clone', '#'%>
- -->                        <% if current_user && (theme.user == current_user) %>
-                            | <%= link_to 'Edit', edit_theme_path(theme) %> |
-                            <%= link_to 'Destroy', theme, method: :delete, data: { confirm: 'Are you sure?' } %>
-                        <% end %>
-</div>
+                            <i class="fa fa-eye"></i>
+                            <!-- | <%= link_to 'Copy', '#'%> |
+                            <%= link_to 'Clone', '#'%> -->
+                            <% if current_user && (theme.user == current_user) %>
+                                | <%= link_to 'Edit', edit_theme_path(theme) %> |
+                                <%= link_to 'Destroy', theme, method: :delete, data: { confirm: 'Are you sure?' } %>
+                            <% end %>
+                        </div>
                     <br>
                     <br>
                 </div>
@@ -44,7 +44,7 @@
 
             </ol>
             <div class="item-content-block">
-                <div class="block-title">Hot Keywords</div>
+                <div class="block-title">Popular Keywords</div>
             </div>
             <div class="item-content-block tags">
                 <% word_counter("x", 10).split.each do |topword| %>

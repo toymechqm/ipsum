@@ -6,30 +6,35 @@
 #
 user1:
   email: admin@admin.com
-  name: admin
+  name: Platty
+  bio: "I am a platypus"
   encrypted_password: <%= Devise.bcrypt(User, 'password') %>
   # also tried encrypted_password: User.new(password_salt: '$2a$10$PoBe1MvkoGJsjMVTEjKqge').send(:password_digest, 'somepassword')
 
 user2:
   email: toyjtoy@gmail.com
-  name: Josh
+  name: Joshua
+  bio: "I like long walks on the beach, holding hands, and boxed wine"
   encrypted_password: <%= Devise.bcrypt(User, 'password') %>
   # also tried encrypted_password: User.new(password_salt: '$2a$10$PoBe1MvkoGJsjMVTEjKqge').send(:password_digest, 'somepassword')
 
 user3:
   email: jtoy@gmail.com
   name: Billy
+  bio: "I like long walks on the beach, holding hands, and boxed wine"
   encrypted_password: <%= Devise.bcrypt(User, 'password') %>
   # also tried encrypted_password: User.new(password_salt: '$2a$10$PoBe1MvkoGJsjMVTEjKqge').send(:password_digest, 'somepassword')
 
 user4:
   email: password@password.com
-  name: BOB
+  name: Bobby Digital
+  bio: "I like long walks on the beach, holding hands, and boxed wine"
   encrypted_password: <%= Devise.bcrypt(User, 'password') %>
   # also tried encrypted_password: User.new(password_salt: '$2a$10$PoBe1MvkoGJsjMVTEjKqge').send(:password_digest, 'somepassword')
 
 user5:
   email: toyjtoy@toyjtoy.com
   name: Josh
+  bio: "I like long walks on the beach, holding hands, and boxing"
   encrypted_password: <%= Devise.bcrypt(User, 'password') %>
   # also tried encrypted_password: User.new(password_salt: '$2a$10$PoBe1MvkoGJsjMVTEjKqge').send(:password_digest, 'somepassword')

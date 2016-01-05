@@ -218,7 +218,7 @@
 
 .panel-footer {
     padding: 10px 15px;
-    background-color: #CEB58C;
+    background-color: #fff;
     height: 135px;
     border-top: 1px solid #A38654;
     border-bottom-right-radius: 3px;
@@ -237,3 +237,12 @@
     bottom: 5px;
 }
 
+.panel-footer:hover{
+  background: #EFECEC;
+}
+
+
+.custom-thumb {
+  width: 300px;
+  padding: 3px;
+}

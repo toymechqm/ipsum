@@ -1,8 +1,11 @@
-<h3>User</h3>
+<h3>User Info</h3>
 <p>Name: <%= @user.name %></p>
-<p>Email: <%= @user.email %></p>
-<p>
-Themes: <% @user.themes.each do |theme| %>
-          <%= theme.title %>
-        <% end %>
-</p>
+<p>About Myself: <%= @user.bio %></p>
+
+
+<h3>My Themes:</h3>
+<ol>
+<% @user.themes.each do |theme| %>
+  <li><%= theme.title %></li>
+<% end %>
+</ol>
