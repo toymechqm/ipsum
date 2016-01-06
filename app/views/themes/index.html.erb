@@ -2,29 +2,28 @@
 <div class="row">
     <div class="col-sm-9">
         <% @themes.each do |theme| %>
-        <div class="col-sm-6">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <strong><%= link_to theme.title, theme %></strong>
-                </div>
-                <div class="panel-footer">
-                    <em>By: <%= theme.user.name %></em>
-                    <br>
-                    <%= truncate(theme.info, :length => 100)  %>
-                    <br><br>
-                        <div class="links">
-                            <i class="fa fa-eye"></i>
-                            <!-- | <%= link_to 'Copy', '#'%> |
-                            <%= link_to 'Clone', '#'%> -->
-                            <% if current_user && (theme.user == current_user) %>
-                                | <%= link_to 'Edit', edit_theme_path(theme) %> |
-                                <%= link_to 'Destroy', theme, method: :delete, data: { confirm: 'Are you sure?' } %>
-                            <% end %>
-                        </div>
-                    <br>
-                    <br>
-                </div>
-            </div>
+            <div class="panel panel-info">
+              <div class="panel-header">
+                <h2 class="panel-heading"><%= link_to theme.title, theme %>
+                  <a href="#" class="toggle-panel-tools pull-right">
+                    <i class="fa fa-share"></i>
+                  </a>
+                </h2>
+                <ul class="panel-tools">
+                  <li><a href="#"><i class="fa fa-facebook-official fa-lg"></i></a></li>
+                  <li><a href="#"><i class="fa fa-pinterest fa-lg"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                  <li><a href="#"><i class="fa fa-envelope fa-lg"></i></a></li>
+                  <li><a href="#"><i class="fa fa-print fa-lg"></i></a></li>
+                </ul>
+              </div>
+              <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et ligula vitae nibh varius fermentum non sit amet lectus. Sed eu sollicitudin odio. Proin lectus magna, malesuada a tempor eu, porta ut augue. </p>
+              </div>
+              <div class="panel-footer">
+                Panel footer
+              </div>
             </div>
         <% end %>
     </div>
@@ -55,3 +54,13 @@
     </div>
 </div>
 
+
+<script>
+    $('.panel-tools').hide();
+
+$('.toggle-panel-tools').click(function(e) {
+  $(this).find('.fa').toggleClass('fa-rotate-45');
+  $(this).parent().next().slideToggle(200);
+  e.preventDefault();
+});
+</script>

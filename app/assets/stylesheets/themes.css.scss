@@ -213,35 +213,135 @@
   font-size: 1.5em;
 }
 
-// Index panels
-.panel-default {
-    border-color: #A38654;
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* makes 1rem = 10px*/
+  overflow-y: scroll;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 6rem;
+  color: rgba(0,0,0,.87);
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2, p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: -.5rem;
+  padding:0;
+}
+
+.panel {
+  background: #fff;
+  box-shadow: 0 0 0.3rem 0 rgba(0,0,0,.15);
+  margin-bottom: 4rem;
+  transition: all 0.3s ease;
+}
+
+/*.panel:hover {
+  box-shadow: 0 0 2.5rem 0 rgba(0,0,0,.25);
+  margin: -.5rem -.5rem 4.5rem -.5rem ;
+}*/
+
+.panel-body{
+  padding: 2rem;
+}
+
+.panel-body-image{
+  padding: 0;
+}
+
+.panel-header {
+  color:rgba(255,255,255,.7);
+  background: #009688;
+  transition: all 0.3s ease;
+}
+
+.panel-heading {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.4rem;
+  padding: 1.5rem 0 0 2rem;
+  overflow: hidden;
+}
+
+.toggle-panel-tools {
+  color: rgba(255,255,255,.7);
+  background: #00796b;
+  padding: 1.5rem;
+  margin-top: -1.5rem;
+  transition: all 0.3s ease;
+}
+
+.toggle-panel-tools:hover {
+  color: rgba(255,255,255,1);
+}
+
+.fa {
+  transition: all 0.3s ease;
+}
+.fa-rotate-45 {
+  transform: rotate(45deg);
+}
+
+.panel-tools {
+  color: rgba(255,255,255,.7);
+  background: #00796b;
+  padding: 1.5rem 2rem;
+  font-size: 1.2rem;
+  list-style: none;
+  margin:0;
+}
+
+.panel-tools li {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+.panel-tools a {
+  color: rgba(255,255,255,.7);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.panel-tools a:hover {
+  color: rgba(255,255,255,1);
 }
 
 .panel-footer {
-    padding: 10px 15px;
-    background-color: #fff;
-    height: 135px;
-    border-top: 1px solid #A38654;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    position: relative;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: rgba(0,0,0,.54);
+  border-top: 1px solid rgba(0,0,0,.12);
+  padding: 1.5rem 2rem;
 }
 
-.panel-footer:hover + .links{
-  background: #EFECEC;
+
+
+
+.panel-danger .panel-heading {
+  background: #E91E63;
 }
 
-.panel-body {
-    background: #FACC0A;
-    height: 50px;
-    padding-top: 6px;
+.panel-danger .toggle-panel-tools, .panel-danger .panel-tools {
+  background: #C2185B;
 }
 
-.links {
-    position: absolute;
-    bottom: 5px;
+.panel-info .panel-heading {
+  background: #3F51B5;
 }
 
+.panel-info .toggle-panel-tools, .panel-info .panel-tools {
+  background: #303F9F;
+}
 
 
