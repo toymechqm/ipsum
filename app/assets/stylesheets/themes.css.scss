@@ -213,22 +213,6 @@
   font-size: 1.5em;
 }
 
-html {
-  box-sizing: border-box;
-  font-size: 62.5%; /* makes 1rem = 10px*/
-  overflow-y: scroll;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 6rem;
-  color: rgba(0,0,0,.87);
-  font-size: 1.6rem;
-  font-family: 'Roboto', sans-serif;
-}
-
 h2, p {
   margin: 0;
 }
@@ -247,10 +231,10 @@ img {
   transition: all 0.3s ease;
 }
 
-/*.panel:hover {
+.panel:hover {
   box-shadow: 0 0 2.5rem 0 rgba(0,0,0,.25);
   margin: -.5rem -.5rem 4.5rem -.5rem ;
-}*/
+}
 
 .panel-body{
   padding: 2rem;
@@ -325,11 +309,13 @@ img {
   padding: 1.5rem 2rem;
 }
 
-
-
-
 .panel-danger .panel-heading {
   background: #E91E63;
+}
+
+.panel-heading > a {
+  color: #fff;
+  text-decoration:none;
 }
 
 .panel-danger .toggle-panel-tools, .panel-danger .panel-tools {

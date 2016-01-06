@@ -19,10 +19,10 @@
                 </ul>
               </div>
               <div class="panel-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et ligula vitae nibh varius fermentum non sit amet lectus. Sed eu sollicitudin odio. Proin lectus magna, malesuada a tempor eu, porta ut augue. </p>
+                <p><%= theme.info %></p>
               </div>
               <div class="panel-footer">
-                Panel footer
+                Authored By: <em><%= link_to theme.user.name, theme.user %></em>
               </div>
             </div>
         <% end %>
