@@ -9,6 +9,7 @@ gem 'jbuilder', '~> 2.0'
 
 gem 'gravtastic'
 gem 'paperclip', github: 'thoughtbot/paperclip'
+gem 'aws-sdk', '< 2.0'
 
 group :development, :test do
   gem 'byebug'
