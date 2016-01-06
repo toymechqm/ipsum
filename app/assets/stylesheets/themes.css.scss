@@ -137,14 +137,16 @@
   font-family: 'Fjalla One', sans-serif;
 }
 
-
 .gravatar.img-circle{
   border-width: 3px;
   border-color: black;
   border-style: solid;
 }
 
-
+.custom-thumb {
+  width: 300px;
+  padding: 3px;
+}
 
 .box {
   width:150px;
@@ -226,6 +228,10 @@
     position: relative;
 }
 
+.panel-footer:hover + .links{
+  background: #EFECEC;
+}
+
 .panel-body {
     background: #FACC0A;
     height: 50px;
@@ -237,12 +243,5 @@
     bottom: 5px;
 }
 
-.panel-footer:hover{
-  background: #EFECEC;
-}
 
 
-.custom-thumb {
-  width: 300px;
-  padding: 3px;
-}
