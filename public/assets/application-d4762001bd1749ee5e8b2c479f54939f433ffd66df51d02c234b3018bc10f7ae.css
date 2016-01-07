@@ -8947,34 +8947,32 @@ body {
 main {
   background-color: #fff;
   padding-bottom: 15px;
-  padding-top: 15px;
   width: 100%;
-  margin-top: 51px;
 }
 
-/* line 47, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 45, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/1st_load_framework.css.scss */
 section {
   margin-top: 20px;
 }
 
-/* line 55, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 53, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/1st_load_framework.css.scss */
 .authform {
   padding-top: 30px;
   max-width: 320px;
   margin: 0 auto;
 }
 
-/* line 60, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 58, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/1st_load_framework.css.scss */
 .authform form {
   padding-bottom: 40px;
 }
 
-/* line 65, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 63, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/1st_load_framework.css.scss */
 .authform .right {
   float: right !important;
 }
 
-/* line 79, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/1st_load_framework.css.scss */
+/* line 77, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/1st_load_framework.css.scss */
 #error_explanation h2 {
   font-size: 16px;
 }
@@ -9183,14 +9181,20 @@ section {
   font-family: 'Fjalla One', sans-serif;
 }
 
-/* line 141, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+/* line 140, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
 .gravatar.img-circle {
   border-width: 3px;
   border-color: black;
   border-style: solid;
 }
 
-/* line 149, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+/* line 146, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+.custom-thumb {
+  width: 300px;
+  padding: 3px;
+}
+
+/* line 151, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
 .box {
   width: 150px;
   height: 150px;
@@ -9202,7 +9206,7 @@ section {
   -webkit-transition: all 0.5s ease;
 }
 
-/* line 159, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+/* line 161, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
 .box:after {
   content: '';
   position: absolute;
@@ -9212,7 +9216,7 @@ section {
   border-right: 75px solid #fff;
 }
 
-/* line 167, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+/* line 169, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
 .box:before {
   content: '';
   position: absolute;
@@ -9222,31 +9226,31 @@ section {
   border-left: 75px solid #fff;
 }
 
-/* line 175, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+/* line 177, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
 .box:hover {
   height: 350px;
 }
 
-/* line 178, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+/* line 180, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
 .box span {
   font-weight: bold;
   text-shadow: 1px 1px 1px #fff;
 }
 
-/* line 183, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+/* line 185, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
 .btn-outline {
   border-width: 6px;
   border-style: solid;
-  border-color: #CEB58C;
+  border-color: #3F51B5;
   margin: 0;
 }
 
-/* line 190, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+/* line 192, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
 .btn-outline:hover {
-  border-color: #FACC0A;
+  border-color: #303F9F;
 }
 
-/* line 195, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+/* line 197, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
 .navbar-inverse {
   background-color: #625F56;
   border-width: 1px;
@@ -9254,12 +9258,12 @@ section {
   margin-top: 10px;
 }
 
-/* line 202, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+/* line 204, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
 .navbar-nav > li > a {
   font-weight: 400;
 }
 
-/* line 206, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+/* line 208, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
 .navbar-inverse .navbar-brand {
   color: #fff;
   font-family: 'Fjalla One', sans-serif;
@@ -9268,33 +9272,470 @@ section {
   font-size: 1.5em;
 }
 
-/* line 215, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
-.panel-default {
-  border-color: #A38654;
+/* line 216, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+h2, p {
+  margin: 0;
 }
 
-/* line 219, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
-.panel-footer {
-  padding: 10px 15px;
-  background-color: #CEB58C;
-  height: 135px;
-  border-top: 1px solid #A38654;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
-  position: relative;
+/* line 220, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: -.5rem;
+  padding: 0;
 }
 
-/* line 229, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+/* line 227, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+.panel {
+  background: #fff;
+  box-shadow: 0 0 0.3rem 0 rgba(0, 0, 0, 0.15);
+  margin-bottom: 4rem;
+  transition: all 0.3s ease;
+}
+
+/* line 234, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+.panel:hover {
+  box-shadow: 0 0 2.5rem 0 rgba(0, 0, 0, 0.25);
+  margin: -0.5rem -0.5rem 4.5rem -0.5rem;
+}
+
+/* line 239, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
 .panel-body {
-  background: #FACC0A;
-  height: 50px;
-  padding-top: 6px;
+  padding: 2rem;
 }
 
-/* line 235, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
-.links {
-  position: absolute;
-  bottom: 5px;
+/* line 243, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+.panel-body-image {
+  padding: 0;
+}
+
+/* line 247, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+.panel-header {
+  color: rgba(255, 255, 255, 0.7);
+  background: #009688;
+  transition: all 0.3s ease;
+}
+
+/* line 253, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+.panel-heading {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.4rem;
+  padding: 1.5rem 0 0 2rem;
+  overflow: hidden;
+}
+
+/* line 261, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+.toggle-panel-tools {
+  color: rgba(255, 255, 255, 0.7);
+  background: #00796b;
+  padding: 1.5rem;
+  margin-top: -1.5rem;
+  transition: all 0.3s ease;
+}
+
+/* line 269, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+.toggle-panel-tools:hover {
+  color: white;
+}
+
+/* line 273, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+.fa {
+  transition: all 0.3s ease;
+}
+
+/* line 276, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+.fa-rotate-45 {
+  transform: rotate(45deg);
+}
+
+/* line 280, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+.panel-tools {
+  color: rgba(255, 255, 255, 0.7);
+  background: #00796b;
+  padding: 1.5rem 2rem;
+  font-size: 1.2rem;
+  list-style: none;
+  margin: 0;
+}
+
+/* line 289, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+.panel-tools li {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+/* line 294, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+.panel-tools a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* line 300, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+.panel-tools a:hover {
+  color: white;
+}
+
+/* line 304, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+.panel-footer {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.54);
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 1.5rem 2rem;
+}
+
+/* line 312, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+.panel-danger .panel-heading {
+  background: #E91E63;
+}
+
+/* line 316, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+.panel-heading > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 321, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+.panel-danger .toggle-panel-tools, .panel-danger .panel-tools {
+  background: #C2185B;
+}
+
+/* line 325, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+.panel-info .panel-heading {
+  background: #3F51B5;
+}
+
+/* line 329, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+.panel-info .toggle-panel-tools, .panel-info .panel-tools {
+  background: #303F9F;
+}
+
+/* line 334, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/themes.css.scss */
+a:hover, a:focus > ol {
+  color: #23527c;
+  text-decoration: none;
+}
+/*
+
+        Creating a sprite from following images:
+
+        app/assets/images/sprites/social-share-button/baidu.png (16x16)
+        app/assets/images/sprites/social-share-button/delicious.png (16x16)
+        app/assets/images/sprites/social-share-button/douban.png (16x16)
+        app/assets/images/sprites/social-share-button/email.png (16x16)
+        app/assets/images/sprites/social-share-button/facebook.png (16x16)
+        app/assets/images/sprites/social-share-button/flickr.png (16x16)
+        app/assets/images/sprites/social-share-button/google_bookmark.png (16x16)
+        app/assets/images/sprites/social-share-button/google_plus.png (16x16)
+        app/assets/images/sprites/social-share-button/kaixin001.png (16x16)
+        app/assets/images/sprites/social-share-button/pinterest.png (16x16)
+        app/assets/images/sprites/social-share-button/plurk.png (16x16)
+        app/assets/images/sprites/social-share-button/qq.png (16x16)
+        app/assets/images/sprites/social-share-button/renren.png (16x16)
+        app/assets/images/sprites/social-share-button/tqq.png (16x16)
+        app/assets/images/sprites/social-share-button/tumblr.png (16x16)
+        app/assets/images/sprites/social-share-button/twitter.png (16x16)
+        app/assets/images/sprites/social-share-button/weibo.png (16x16)
+
+        Output files:
+          app/assets/images/sprites/social-share-button.png
+          app/assets/stylesheets/social-share-button.scss
+
+        Output size:
+          80x64
+
+*/
+/* line 32, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-baidu {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") 0px 0px no-repeat;
+}
+
+/* line 33, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-delicious {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -16px 0px no-repeat;
+}
+
+/* line 34, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-douban {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") 0px -16px no-repeat;
+}
+
+/* line 35, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-email {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -16px -16px no-repeat;
+}
+
+/* line 36, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-facebook {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -32px 0px no-repeat;
+}
+
+/* line 37, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-flickr {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -32px -16px no-repeat;
+}
+
+/* line 38, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-google_bookmark {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") 0px -32px no-repeat;
+}
+
+/* line 39, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-google_plus {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -16px -32px no-repeat;
+}
+
+/* line 40, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-kaixin001 {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -32px -32px no-repeat;
+}
+
+/* line 41, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-pinterest {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -48px 0px no-repeat;
+}
+
+/* line 42, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-plurk {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -48px -16px no-repeat;
+}
+
+/* line 43, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-qq {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -48px -32px no-repeat;
+}
+
+/* line 44, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-renren {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") 0px -48px no-repeat;
+}
+
+/* line 45, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-tqq {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -16px -48px no-repeat;
+}
+
+/* line 46, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-tumblr {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -32px -48px no-repeat;
+}
+
+/* line 47, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-twitter {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -48px -48px no-repeat;
+}
+
+/* line 48, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+.social-share-button-weibo {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/assets/sprites/social-share-button-01bd4e9a7782620aab986c55abc6ecb9ee88d50bb51f28c2f00fe36d87a0944c.png") -64px 0px no-repeat;
+}
+
+@media only screen and (-webkit-device-pixel-ratio: 2) {
+  /* line 51, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-baidu {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") 0px 0px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 52, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-delicious {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -16px 0px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 53, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-douban {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") 0px -16px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 54, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-email {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -16px -16px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 55, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-facebook {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -32px 0px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 56, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-flickr {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -32px -16px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 57, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-google_bookmark {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") 0px -32px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 58, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-google_plus {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -16px -32px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 59, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-kaixin001 {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -32px -32px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 60, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-pinterest {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -48px 0px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 61, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-plurk {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -48px -16px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 62, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-qq {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -48px -32px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 63, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-renren {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") 0px -48px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 64, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-tqq {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -16px -48px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 65, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-tumblr {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -32px -48px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 66, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-twitter {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -48px -48px no-repeat;
+    background-size: 80px 64px;
+  }
+
+  /* line 67, /usr/local/var/rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/social-share-button-0.1.10/app/assets/stylesheets/social-share-button.scss */
+  .social-share-button-weibo {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/sprites/social-share-button@2x-a597120b30fe6ae4ac5b4f0f45f307c0f5519851529b3010a7c584eb3ed186be.png") -64px 0px no-repeat;
+    background-size: 80px 64px;
+  }
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -9310,4 +9751,12 @@ section {
  *
 
 
+
  */
+/* line 19, /Users/ToyMechQM/Desktop/RailsApps/ipsum/app/assets/stylesheets/application.css.scss */
+.social-share-button-facebook {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url(/assets/fb-7b956a705dca9161ba8a6a57c4e30e90b6fa58d0eb144c2935b4e62ff225d277.png) no-repeat;
+}
