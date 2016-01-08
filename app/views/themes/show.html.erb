@@ -49,22 +49,15 @@
 
     <%= render 'examples' %>
     <strong><%= @theme.title %> Output:</strong>
-<!--     <p id="hiddenp" class="pone"><%= ipsum_shuffle %></p>
-    <p id="hiddenp" class="ptwo"><%= ipsum_shuffle %></p>
-    <p id="hiddenp" class="pthree"><%= ipsum_shuffle %></p>
-    <p id="hiddenp" class="pfour"><%= ipsum_shuffle %></p>
-    <p id="hiddenp" class="pfive"><%= ipsum_shuffle %></p>
-    <p id="hiddenp" class="psix"><%= ipsum_shuffle %></p> -->
 
-<div class='wrapper'>
     <div class='ipsumtext'>
         <h3 class="text-center">
-            Select the Number of paragraphs above to
+            Select the Number of paragraphs above
             <%= image_tag "plathap.jpg", class: "custom-thumb" %>
-            <br />display <%= @theme.title %>
+            <br /> to display <%= @theme.title %>!
         </h3>
     </div>
-</div>
+
 
 <div class="show-nav">
     <%= link_to themes_path, class: 'btn btn-default' do %>
