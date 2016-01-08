@@ -32,9 +32,7 @@
     </div>
 
 <div class="letter-slider">
-    <h3>
-        Number of paragraphs
-    </h3>
+    <h3>Number of paragraphs</h3>
     <input id="letterA" type="radio" name="letter">
     <label for="letterA">1</label>
     <input id="letterB" type="radio" name="letter">
@@ -49,14 +47,14 @@
     <label for="letterF">6</label>
 </div>
 
-    <strong><%= @theme.title %> Output:</strong>
     <%= render 'examples' %>
-    <div id="hiddenp" class="pone"><%= ipsum_shuffle %></div>
-    <div id="hiddenp" class="ptwo"><%= ipsum_shuffle %></div>
-    <div id="hiddenp" class="pthree"><%= ipsum_shuffle %></div>
-    <div id="hiddenp" class="pfour"><%= ipsum_shuffle %></div>
-    <div id="hiddenp" class="pfive"><%= ipsum_shuffle %></div>
-    <div id="hiddenp" class="psix"><%= ipsum_shuffle %></div>
+    <strong><%= @theme.title %> Output:</strong>
+<!--     <p id="hiddenp" class="pone"><%= ipsum_shuffle %></p>
+    <p id="hiddenp" class="ptwo"><%= ipsum_shuffle %></p>
+    <p id="hiddenp" class="pthree"><%= ipsum_shuffle %></p>
+    <p id="hiddenp" class="pfour"><%= ipsum_shuffle %></p>
+    <p id="hiddenp" class="pfive"><%= ipsum_shuffle %></p>
+    <p id="hiddenp" class="psix"><%= ipsum_shuffle %></p> -->
 
 <div class='wrapper'>
     <div class='ipsumtext'>
@@ -69,77 +67,64 @@
 </div>
 
 <div class="show-nav">
-    <% if @theme.user == current_user %>
-        <%= link_to edit_theme_path(@theme), class: 'btn btn-default pull-right' do %>
-            Ipsum Settings <i class="fa fa-cogs"></i>
-        <% end %>
-    <% end %>
-    <button type="button" onClick="history.go(0)" class="btn btn-warning pull-right">
-        <i class="fa fa-refresh"></i>
-    </button>
     <%= link_to themes_path, class: 'btn btn-default' do %>
         <i class="fa fa-chevron-circle-left"></i> <br/>Back
     <% end %>
     <%= link_to themes_path, class: 'btn btn-success disabled' do %>
         <i class="fa fa-clipboard"></i> <br/>Copy
     <% end %>
+    <% if @theme.user == current_user %>
+        <%= link_to edit_theme_path(@theme), class: 'btn btn-default' do %>
+            <i class="fa fa-cogs"></i>
+            <br>Settings
+        <% end %>
+    <% end %>
+    <button type="button" onClick="history.go(0)" class="btn btn-warning">
+        <i class="fa fa-refresh"></i>
+        <br>Refresh
+    </button>
 </div>
 
 <script>
     $(document).ready(function(){
         $("#letterA").click(function(){
             $('.ipsumtext').empty();
-            $('.ipsumtext').append("<p class='paragraph1'></p>").append($('.pone').text());
+            $('.ipsumtext').append("<p class='spacer'><%= ipsum_shuffle %></p>");
         });
         $("#letterB").click(function(){
             $('.ipsumtext').empty();
-            $('.ipsumtext').append("<p class='paragraph1'></p>").append($('.pone').text());
-            $('.ipsumtext').append("<p class='paragraph2'></p>").append($('.ptwo').text());
+            $('.ipsumtext').append("<p class='spacer'><%= ipsum_shuffle %></p>");
+            $('.ipsumtext').append("<p class='spacer'><%= ipsum_shuffle %></p>");
         });
         $("#letterC").click(function(){
             $('.ipsumtext').empty();
-            $('.ipsumtext').append("<p class='paragraph1'></p>").append($('.pone').text());
-            $('.ipsumtext').append("<p class='paragraph2'></p>").append($('.ptwo').text());
-            $('.ipsumtext').append("<p class='paragraph3'></p>").append($('.pthree').text());
+            $('.ipsumtext').append("<p class='spacer'><%= ipsum_shuffle %></p>");
+            $('.ipsumtext').append("<p class='spacer'><%= ipsum_shuffle %></p>");
+            $('.ipsumtext').append("<p class='spacer'><%= ipsum_shuffle %></p>");
         });
         $("#letterD").click(function(){
             $('.ipsumtext').empty();
-            $('.ipsumtext').append("<p class='paragraph1'></p>");
-            $('.ipsumtext').append("<p class='paragraph2'></p>");
-            $('.ipsumtext').append("<p class='paragraph3'></p>");
-            $('.ipsumtext').append("<p class='paragraph4'></p>");
-            $('.paragraph1').append($('.pone').text());
-            $('.paragraph2').append($('.ptwo').text());
-            $('.paragraph3').append($('.pthree').text());
-            $('.paragraph4').append($('.pfour').text());
+            $('.ipsumtext').append("<p class='spacer'><%= ipsum_shuffle %></p>");
+            $('.ipsumtext').append("<p class='spacer'><%= ipsum_shuffle %></p>");
+            $('.ipsumtext').append("<p class='spacer'><%= ipsum_shuffle %></p>");
+            $('.ipsumtext').append("<p class='spacer'><%= ipsum_shuffle %></p>");
         });
         $("#letterE").click(function(){
             $('.ipsumtext').empty();
-            $('.ipsumtext').append("<p class='paragraph1'></p>");
-            $('.ipsumtext').append("<p class='paragraph2'></p>");
-            $('.ipsumtext').append("<p class='paragraph3'></p>");
-            $('.ipsumtext').append("<p class='paragraph4'></p>");
-            $('.ipsumtext').append("<p class='paragraph5'></p>");
-            $('.paragraph1').append($('.pone').text());
-            $('.paragraph2').append($('.ptwo').text());
-            $('.paragraph3').append($('.pthree').text());
-            $('.paragraph4').append($('.pfour').text());
-            $('.paragraph5').append($('.pfive').text());
+            $('.ipsumtext').append("<p class='spacer'><%= ipsum_shuffle %></p>");
+            $('.ipsumtext').append("<p class='spacer'><%= ipsum_shuffle %></p>");
+            $('.ipsumtext').append("<p class='spacer'><%= ipsum_shuffle %></p>");
+            $('.ipsumtext').append("<p class='spacer'><%= ipsum_shuffle %></p>");
+            $('.ipsumtext').append("<p class='spacer'><%= ipsum_shuffle %></p>");
         });
         $("#letterF").click(function(){
             $('.ipsumtext').empty();
-            $('.ipsumtext').append("<p class='paragraph1'></p>");
-            $('.ipsumtext').append("<p class='paragraph2'></p>");
-            $('.ipsumtext').append("<p class='paragraph3'></p>");
-            $('.ipsumtext').append("<p class='paragraph4'></p>");
-            $('.ipsumtext').append("<p class='paragraph5'></p>");
-            $('.ipsumtext').append("<p class='paragraph6'></p>");
-            $('.paragraph1').append($('.pone').text());
-            $('.paragraph2').append($('.ptwo').text());
-            $('.paragraph3').append($('.pthree').text());
-            $('.paragraph4').append($('.pfour').text());
-            $('.paragraph5').append($('.pfive').text());
-            $('.paragraph6').append($('.psix').text());
+            $('.ipsumtext').append("<p class='spacer'><%= ipsum_shuffle %></p>");
+            $('.ipsumtext').append("<p class='spacer'><%= ipsum_shuffle %></p>");
+            $('.ipsumtext').append("<p class='spacer'><%= ipsum_shuffle %></p>");
+            $('.ipsumtext').append("<p class='spacer'><%= ipsum_shuffle %></p>");
+            $('.ipsumtext').append("<p class='spacer'><%= ipsum_shuffle %></p>");
+            $('.ipsumtext').append("<p class='spacer'><%= ipsum_shuffle %></p>");
         });
     });
 </script>
